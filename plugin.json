@@ -1,0 +1,10 @@
+{
+	"id": "nodebb-my-test-plugin",
+	"name": "NodeBB Test",
+	"description": "Testing",
+	"library": "./index.js",
+	"templates": "templates",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "logger" }
+	]
+}
