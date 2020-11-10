@@ -1,0 +1,11 @@
+{
+	"id": "nodebb-sample-api-plugin",
+	"name": "NodeBB Test",
+	"description": "Testing",
+	"library": "./index.js",
+    "templates": "templates",
+    "url": "https://github.com/VenkatKadiveti/nodebb-plugin-testing",
+	"hooks": [
+		{ "hook": "static:app.load", "method": "load" }
+	]
+}
