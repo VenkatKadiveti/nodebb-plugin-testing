@@ -1,5 +1,5 @@
 {
-	"id": "nodebb-sample-api-plugin",
+	"id": "nodebb-plugin-npm",
 	"name": "NodeBB Test",
 	"description": "Testing",
 	"library": "./index.js",

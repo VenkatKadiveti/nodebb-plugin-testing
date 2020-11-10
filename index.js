@@ -1,19 +1,15 @@
 var axios = require('axios');
+var createTopic = require('./routes/createObjects');
+var getTopic = require('./routes/getTopics');
+
 var Plugin = {};
 
-
 Plugin.load = function (params, callback) {
-    console.log('params----', params);
+    console.log('-----init----');
     var router = params.router;
-    router.get('/getData', getTestData);
+    router.post('/addTopic', createTopic);
+    router.get('/getTopic', getTopic);
     callback();
-}
-
-
-async function getTestData(req, res) {
-    console.log('get test data')
-    const data = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
-    res.send(data);
 }
 
 module.exports = Plugin;
